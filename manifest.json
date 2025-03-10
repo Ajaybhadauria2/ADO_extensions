@@ -1,0 +1,24 @@
+{
+  "manifestVersion": 1,
+  "id": "custom-scrumbuddy",
+  "publisher": "yourPublisherId",
+  "version": "1.0.0",
+  "name": "QCS Capacity Planner",
+  "description": "A customized Capacity Planner extension for Azure DevOps",
+  "public": true,
+  "contributions": [
+    {
+      "id": "capacity-planning",
+      "type": "ms.vss-web.hub",
+      "targets": [
+        "ms.vss-web.collection",
+        "ms.vss-web.project"
+      ],
+      "properties": {
+        "name": "Capacity Planning",
+        "uri": "dist/index.html",
+        "order": 1
+      }
+    }
+  ]
+}
